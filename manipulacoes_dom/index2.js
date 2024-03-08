@@ -65,7 +65,7 @@ let textoParagrafo = document.querySelector('#container p');
 
 console.log(textoParagrafo);
 
-container2.removeChild(textoParagrafo);
+container2.removeChild();
 
 //remover um elemento
 
@@ -76,31 +76,29 @@ subtitle.remove();
 
 
 // -----trocando elementos-----
-let element3 = document.createElement('h3');
+let jogadorNovo = document.createElement('h3');
 
 let texto3 = document.createTextNode("Este é o texto do h3 substituido");
 
-element3.appendChild(texto3);
+jogadorNovo.appendChild(texto3);
 
-console.log(element3);
+console.log(jogadorNovo);
 
-//elemento que desejo trocar
-let titulo3 = document.querySelector('#title');
+//----elemento que desejo trocar----
+let jogadorAntigo = document.querySelector('#title');
 
-console.log(titulo3);
+console.log(jogadorAntigo);
 
-let pai = titulo3.parentNode;
-console.log(pai);
+let timeTodo = jogadorAntigo.parentNode;
+console.log(timeTodo);
 
-pai.replaceChild(element3, titulo3);
+timeTodo.replaceChild(jogadorNovo, jogadorAntigo);
 
-
-//----Adicionando atributos--------
+// ----Adicionando atributos--------
 let btnExemplo = document.querySelector('#btn');
 
 btnExemplo.setAttribute('disabled', 'disabled');
 btnExemplo.setAttribute('style', 'background-color: green; color: white')
-
 
 btnExemplo.setAttribute('class', 'testando-atributo');
 console.log(btnExemplo);
@@ -111,7 +109,28 @@ console.log(lista);
 
 lista.removeAttribute('id');
 
+//-----Adicionar css-----
+let title5 = document.querySelector('#title');
 
+title5.style.color = 'red';
+
+let subtitulo = document.querySelector('.subtitle')
+
+subtitulo.style.cssText = 'color: blue; background-color: pink;'
+
+//----proriedades do document---------
+console.log(document.head);
+console.log(document.body);
+console.log(document.links[0]);
+
+document.links[0].textContent = 'lista de um link só';
+
+document.links[0].style.backgroundColor = 'pink';
+
+console.log(document.URL);
+console.log(document.title);
+
+document.title = 'Aula 2';
 
 
 
