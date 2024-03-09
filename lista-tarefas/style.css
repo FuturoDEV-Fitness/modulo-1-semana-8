@@ -1,4 +1,63 @@
-.completed{
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: aliceblue;
+}
+
+
+.completed {
     text-decoration: line-through;
     opacity: 0.5;
+}
+
+.task-item {
+    list-style: none;
+    /* Remove os marcadores padrão de lista */
+    margin-bottom: 5px;
+    /* Adiciona um espaço entre os itens da lista */
+    padding: 10px;
+    /* Adiciona um preenchimento interno aos itens da lista */
+    border: 1px solid #ccc;
+    /* Adiciona uma borda aos itens da lista */
+    border-radius: 5px;
+    /* Adiciona bordas arredondadas aos itens da lista */
+    display: flex;
+    /* Permite que os botões de ação fiquem na mesma linha */
+    justify-content: space-between;
+    /* Alinha os botões de ação à direita */
+}
+
+.task-item button {
+    color: #fff;
+    /* Cor do texto branco para os botões */
+    border: none;
+    /* Remove as bordas dos botões */
+    border-radius: 3px;
+    /* Adiciona bordas arredondadas aos botões */
+    padding: 5px 10px;
+    /* Adiciona um preenchimento interno aos botões */
+    cursor: pointer;
+    /* Muda o cursor para indicar que os botões são clicáveis */
+}
+
+.button-delete {
+    background-color: red;
+    text-decoration: none;
+}
+
+.button-complete {
+    background-color: green;
+    text-decoration: none;
+}
+
+.container{
+    text-align: center;
+    background-color: aquamarine;
+    text-align: center;
+    width: 300px;
+    height: 300px;
+    display: grid;
+    justify-content: center;
+    margin-left: 400px;
 }

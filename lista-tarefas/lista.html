@@ -8,12 +8,18 @@
 </head>
 <body>
 
-  <h2>Lista de Tarefas</h2>
-  <input type="text" id="taskInput" placeholder="Adicionar nova tarefa">
-  <button onclick="addTask()">Adicionar</button>
-  <ul id="taskList">
-      <!-- Lista de tarefas será inserida aqui -->
-  </ul>
+  <div class="container">
+    <div class="title">
+      <h2>Lista de Tarefas</h2>
+    </div>
+    <div class="list-container">
+      <input type="text" id="taskInput" placeholder="Adicionar nova tarefa">
+      <button onclick="addTask()">Adicionar</button>
+      <ul id="taskList">
+          <!-- Lista de tarefas será inserida aqui -->
+      </ul>
+    </div>
+  </div>
 
   <script src="/lista-tarefas/lista.js"></script>
 </body>
